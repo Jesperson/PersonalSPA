@@ -6,9 +6,10 @@
           {{ title }}
         </p>
         <h5>Reasons:</h5>
-        <a v-for="link in reasons" :key="link" :href="link"
-          >{{ link }} <br
-        /></a>
+        <a v-for="link in reasons" :key="link" :href="link">
+          {{ link }}
+          <br />
+        </a>
         <br />
         <div class="flex">
           <h5>
@@ -72,6 +73,7 @@ li {
 
 .test {
   width: 100%;
+  margin: 2ex auto;
 }
 
 #reason {

@@ -11,7 +11,7 @@ export default {
 
 <template>
   <section class="section">
-    <div class="columns is-mobile">
+    <div class="is-mobile">
       <CompanyCard
         title="Nestle"
         :reasons="[
