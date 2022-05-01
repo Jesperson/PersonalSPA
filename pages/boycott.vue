@@ -14,7 +14,11 @@ export default {
     <div class="columns is-mobile">
       <CompanyCard
         title="Nestle"
-        :reasons="['Placeholder1', 'Placeholder2', 'Placeholder3']"
+        :reasons="[
+          'https://en.wikipedia.org/wiki/Nestl%C3%A9#Baby_formula_marketing',
+          'https://en.wikipedia.org/wiki/Nestl%C3%A9#Slavery_and_child_labour',
+          'https://www.rfi.fr/en/zelensky-blasts-swiss-banks-nestle-over-business-as-usual-with-russia',
+        ]"
         :subsidiaries="[
           'Carnation',
           'Enviga',
@@ -452,6 +456,11 @@ export default {
           'Bit-O-Honey',
           'Wonder Ball',
         ]"
+      />
+      <CompanyCard
+        title="Company"
+        :reasons="['test', 'test2']"
+        :subsidiaries="['sub1', 'sub2', 'sub3']"
       />
     </div>
   </section>

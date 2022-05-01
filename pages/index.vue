@@ -1,6 +1,13 @@
 <template>
   <section class="section">
-    <div class="columns is-mobile">
+    <section class="top">
+      <p>
+        Just a general site for me to try and get better at front-end, nuxt/vue
+        and coding in general.
+      </p>
+      <br />
+    </section>
+    <div class="columns">
       <a href="boycott">
         <card title="Boycott" icon="home">
           List of companies to boycott (including subsidiaries) and reasons why.

@@ -20,7 +20,7 @@
 
     <section class="main-content columns">
       <aside class="column is-2 section">
-        <p class="menu-label is-hidden-touch">General</p>
+        <p class="menu-label is-hidden-touch">Nav</p>
         <ul class="menu-list">
           <li v-for="(item, key) of items" :key="key">
             <NuxtLink :to="item.to" exact-active-class="is-active">
@@ -50,7 +50,7 @@ export default {
         },
         {
           title: 'Boycott',
-          icon: 'lightbulb',
+          icon: 'alert-octagon',
           to: { name: 'boycott' },
         },
         {
