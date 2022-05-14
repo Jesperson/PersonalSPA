@@ -9,7 +9,7 @@
     </section>
     <div class="columns">
       <a href="boycott">
-        <card title="Boycott" icon="home">
+        <card title="Boycott" icon="skull-crossbones">
           List of companies to boycott (including subsidiaries) and reasons why.
         </card>
       </a>
@@ -17,6 +17,12 @@
       <a href="projects">
         <card title="Projects" icon="home">
           Projects I have made/am working on.
+        </card>
+      </a>
+
+      <a href="about">
+        <card title="About Me" icon="account-question-outline">
+          A bit about me.
         </card>
       </a>
     </div>
@@ -33,3 +39,9 @@ export default {
   },
 }
 </script>
+
+<style scoped>
+a {
+  max-width: 25%;
+}
+</style>
