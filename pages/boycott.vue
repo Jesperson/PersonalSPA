@@ -1,14 +1,3 @@
-<script>
-import CompanyCard from '~/components/CompanyCard'
-
-export default {
-  name: 'BoycottPage',
-  components: {
-    CompanyCard,
-  },
-}
-</script>
-
 <template>
   <section class="section">
     <div class="is-mobile">
@@ -473,3 +462,14 @@ export default {
     </div>
   </section>
 </template>
+
+<script>
+import CompanyCard from '~/components/CompanyCard'
+
+export default {
+  name: 'BoycottPage',
+  components: {
+    CompanyCard,
+  },
+}
+</script>

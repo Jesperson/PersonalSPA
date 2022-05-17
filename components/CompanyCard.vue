@@ -13,7 +13,7 @@
         <br />
         <div class="flex">
           <h5>
-            <b>Subsidiaries:</b>
+            <b>Subsidiaries ({{ subsidiaries.length }}):</b>
           </h5>
           <div v-if="showSubsBool == true">
             <span @click="toggleShowSubsidiaries()">

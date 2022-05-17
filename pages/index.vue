@@ -9,15 +9,11 @@
     </section>
     <div class="columns">
       <a href="boycott">
-        <card title="Boycott" icon="skull-crossbones">
-          List of companies to boycott (including subsidiaries) and reasons why.
-        </card>
+        <card title="Boycott" icon="alert-octagon"> Companies I boycott. </card>
       </a>
 
       <a href="projects">
-        <card title="Projects" icon="home">
-          Projects I have made/am working on.
-        </card>
+        <card title="Projects" icon="code-tags"> My projects. </card>
       </a>
 
       <a href="about">
@@ -42,6 +38,7 @@ export default {
 
 <style scoped>
 a {
-  max-width: 25%;
+  max-width: 20%;
+  width: 18%;
 }
 </style>

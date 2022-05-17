@@ -60,7 +60,7 @@ export default {
         },
         {
           title: 'About Me',
-          icon: 'account',
+          icon: 'account-question-outline',
           to: { name: 'about' },
         },
       ],
