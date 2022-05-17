@@ -13,20 +13,25 @@
         <br />
         <div class="flex">
           <h5>
-            <b>Subsidiaries:</b>
+            <b>Subsidiaries ({{ subsidiaries.length }}):</b>
           </h5>
-          <div v-if="showSubsBool" @click="toggleShowSubsidiaries()">
-            <b-icon icon="menu-up-outline" class="is-primary" />
+          <div v-if="showSubsBool == true">
+            <span @click="toggleShowSubsidiaries()">
+              <b-icon icon="menu-up-outline" class="is-primary" />
+            </span>
             <li v-for="sub in subsidiaries" :key="sub">
               <b-icon icon="flag-outline" size="is-small" />{{ sub }}
             </li>
           </div>
-          <div v-else @click="toggleShowSubsidiaries()">
+        </div>
+        <div v-if="showSubsBool == false">
+          <span @click="toggleShowSubsidiaries()">
             <b-icon icon="menu-down-outline" />
-          </div>
+          </span>
         </div>
       </div>
     </div>
+    <hr />
   </div>
 </template>
 
@@ -78,5 +83,14 @@ li {
 
 #reason {
   text-align: justify;
+}
+
+hr {
+  border: none;
+  border-top: 2px double #222;
+  color: #555;
+  overflow: visible;
+  height: 4px;
+  text-align: center;
 }
 </style>

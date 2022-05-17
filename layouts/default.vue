@@ -58,6 +58,11 @@ export default {
           icon: 'code-tags',
           to: { name: 'projects' },
         },
+        {
+          title: 'About Me',
+          icon: 'account-question-outline',
+          to: { name: 'about' },
+        },
       ],
     }
   },

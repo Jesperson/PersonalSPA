@@ -1,6 +1,6 @@
 <template>
   <section class="section">
-    <div class="columns is-mobile">
+    <div class="column is-mobile">
       <a
         href="https://git.quickbrb.com/Jesperson/PokemonPartyBlazor"
         target="_blank"
@@ -11,6 +11,12 @@
             interesting and I continued it - also a good reason for me to try
             and learn Blazor better.
           </p>
+        </card>
+      </a>
+
+      <a href="https://github.com/Jesperson" target="_blank">
+        <card title="GitHub" icon="github">
+          <p>My personal GitHub, a few projects here - old and new.</p>
         </card>
       </a>
     </div>

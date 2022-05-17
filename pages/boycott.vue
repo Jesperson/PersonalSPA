@@ -1,19 +1,8 @@
-<script>
-import CompanyCard from '~/components/CompanyCard'
-
-export default {
-  name: 'BoycottPage',
-  components: {
-    CompanyCard,
-  },
-}
-</script>
-
 <template>
   <section class="section">
     <div class="is-mobile">
       <CompanyCard
-        title="Nestle"
+        title="Nestlé"
         :reasons="[
           'https://en.wikipedia.org/wiki/Nestl%C3%A9#Baby_formula_marketing',
           'https://en.wikipedia.org/wiki/Nestl%C3%A9#Slavery_and_child_labour',
@@ -458,10 +447,29 @@ export default {
         ]"
       />
       <CompanyCard
-        title="Company"
-        :reasons="['test', 'test2']"
-        :subsidiaries="['sub1', 'sub2', 'sub3']"
+        title="NVidia"
+        :reasons="[
+          'https://gameluster.com/understanding-the-nvidia-geforce-controversy-whos-out-whos-in/',
+          'https://en.wikipedia.org/wiki/Nvidia#Hardware_Unboxed_controversy',
+        ]"
+        :subsidiaries="[
+          'Mellanox Technologies',
+          '3dfx Interactive',
+          'MediaQ',
+          'Hybrid Graphics',
+        ]"
       />
     </div>
   </section>
 </template>
+
+<script>
+import CompanyCard from '~/components/CompanyCard'
+
+export default {
+  name: 'BoycottPage',
+  components: {
+    CompanyCard,
+  },
+}
+</script>
