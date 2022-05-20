@@ -8,19 +8,19 @@
       <br />
     </section>
     <div class="columns">
-      <a href="boycott">
+      <NuxtLink to="boycott">
         <card title="Boycott" icon="alert-octagon"> Companies I boycott. </card>
-      </a>
+      </NuxtLink>
 
-      <a href="projects">
+      <NuxtLink to="projects">
         <card title="Projects" icon="code-tags"> My projects. </card>
-      </a>
+      </NuxtLink>
 
-      <a href="about">
+      <NuxtLink to="projects">
         <card title="About Me" icon="account-question-outline">
           A bit about me.
         </card>
-      </a>
+      </NuxtLink>
     </div>
   </section>
 </template>
