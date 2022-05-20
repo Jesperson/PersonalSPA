@@ -1,9 +1,11 @@
 <template>
   <section class="section">
     <section class="top">
+      <title>Home</title>
       <p>
         Just a general site for me to try and get better at front-end, nuxt/vue
-        and coding in general.
+        and coding in general. I will some how try to reflect my self within the
+        information on here but I can't make any promises.
       </p>
       <br />
     </section>
@@ -40,5 +42,9 @@ export default {
 a {
   max-width: 20%;
   width: 18%;
+}
+
+p {
+  max-width: 80%;
 }
 </style>
