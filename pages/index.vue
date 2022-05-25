@@ -18,7 +18,7 @@
         <card title="Projects" icon="code-tags"> My projects. </card>
       </NuxtLink>
 
-      <NuxtLink to="projects">
+      <NuxtLink to="about">
         <card title="About Me" icon="account-question-outline">
           A bit about me.
         </card>
