@@ -11,7 +11,7 @@
     </section>
     <div class="columns">
       <NuxtLink to="boycott">
-        <card title="Boycott" icon="alert-octagon"> Companies I boycott. </card>
+        <card title="Boycott" icon="alert-octagon"> My boycotts. </card>
       </NuxtLink>
 
       <NuxtLink to="projects">

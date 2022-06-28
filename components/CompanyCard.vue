@@ -1,20 +1,25 @@
 <template>
-  <div class="test">
-    <div class="tile is-parent">
-      <div class="content">
-        <p class="title">
-          {{ title }}
-        </p>
-        <h5>Reasons:</h5>
-        <a v-for="link in reasons" :key="link" :href="link">
-          {{ link }}
-          <br />
-        </a>
+  <div class="tile is-parent">
+    <div class="content">
+      <p class="title">
+        {{ title }}
+      </p>
+      <h5>Reasons:</h5>
+      <a v-for="link in reasons" :key="link" :href="link">
+        {{ link }}
         <br />
-        <div class="flex">
+      </a>
+      <br />
+      <div class="flex">
+        <div v-if="isCompany === true">
           <h5>
-            <b>Subsidiaries ({{ subsidiaries.length }}):</b>
+            <b>
+              Subsidiaries
+              {{ subsidiaries.length != 0 ? subsidiaries.length : null }}:
+            </b>
           </h5>
+        </div>
+        <div v-if="isCompany === true">
           <div v-if="showSubsBool == true">
             <span @click="toggleShowSubsidiaries()">
               <b-icon icon="menu-up-outline" class="is-primary" />
@@ -23,15 +28,15 @@
               <b-icon icon="flag-outline" size="is-small" />{{ sub }}
             </li>
           </div>
-        </div>
-        <div v-if="showSubsBool == false">
-          <span @click="toggleShowSubsidiaries()">
-            <b-icon icon="menu-down-outline" />
-          </span>
+          <div v-if="showSubsBool == false">
+            <span @click="toggleShowSubsidiaries()">
+              <b-icon icon="menu-down-outline" />
+            </span>
+          </div>
         </div>
       </div>
+      <hr />
     </div>
-    <hr />
   </div>
 </template>
 
@@ -58,6 +63,10 @@ export default {
       type: Boolean,
       default: false,
     },
+    isCompany: {
+      type: Boolean,
+      default: true,
+    },
   },
   methods: {
     toggleShowSubsidiaries() {
@@ -76,7 +85,7 @@ li {
   width: 100%;
 }
 
-.test {
+.content {
   width: 100%;
   margin: 2ex auto;
 }
