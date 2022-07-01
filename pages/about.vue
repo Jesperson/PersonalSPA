@@ -12,16 +12,22 @@
         <a href="https://www.visma.se/draftit/" target="_blank">
           Visma DraftIt
         </a>
-        as a software engineer. All opinions are obviously my own and do in no
-        way necessarily reflect them.
+        as a full-stack systems developer working with React and C#.
+        <br />
+        All opinions are obviously my own and do in no way necessarily reflect
+        them.
+        <br />
+        <IconLinks></IconLinks>
       </p>
     </div>
   </section>
 </template>
 
 <script>
+import IconLinks from '~/components/IconLinks.vue'
 export default {
   name: 'AboutPage',
+  components: { IconLinks },
 }
 </script>
 
