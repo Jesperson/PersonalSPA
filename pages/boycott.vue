@@ -468,7 +468,7 @@
           'https://www.marca.com/en/lifestyle/celebrities/2022/05/23/628abff122601d15418b45d1.html',
           'https://www.washingtonpost.com/opinions/ive-seen-how-institutions-protect-men-accused-of-abuse-heres-what-we-can-do/2018/12/18/71fd876a-02ed-11e9-b5df-5d3874f1ac36_story.html',
         ]"
-        isCompany="false"
+        is-company="false"
       />
     </div>
   </section>
