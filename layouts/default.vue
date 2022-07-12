@@ -9,12 +9,18 @@
         <a class="navbar-item" href="/">
           <img src="~assets/jsharp.png" alt="Buefy" height="28" />
         </a>
+      </div>
+      <span />
+      <span />
+      <span />
 
-        <div class="navbar-burger">
-          <span />
-          <span />
-          <span />
-        </div>
+      <div v-if="$auth.loggedIn" class="right-aligned">
+        <p>Logged in as: {{ $auth.user }}</p>
+      </div>
+
+      <div v-else class="right-aligned">
+        <NuxtLink class="headerText" to="/login">Login </NuxtLink><br />
+        <NuxtLink class="headerText" to="/register">Register </NuxtLink>
       </div>
     </nav>
 
@@ -68,3 +74,16 @@ export default {
   },
 }
 </script>
+
+
+<style scoped>
+.headerText {
+  color: #000;
+  font-size: 1em;
+  float: right;
+}
+
+.right-aligned {
+  width: 65%;
+}
+</style>

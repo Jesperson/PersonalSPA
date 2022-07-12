@@ -39,7 +39,16 @@ export default {
   modules: [
     // https://go.nuxtjs.dev/buefy
     'nuxt-buefy',
+    '@nuxtjs/axios',
+    '@nuxtjs/auth-next',
   ],
+
+  auth: {
+    strategies: {
+      customStrategy: { scheme: '~/schemes/CustomScheme' /* */ },
+      github: {},
+    },
+  },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {},
