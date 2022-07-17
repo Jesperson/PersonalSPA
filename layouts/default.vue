@@ -9,18 +9,22 @@
         <a class="navbar-item" href="/">
           <img src="~assets/jsharp.png" alt="Buefy" height="28" />
         </a>
+      </div>
+      <span />
+      <span />
+      <span />
 
-        <div class="navbar-burger">
-          <span />
-          <span />
-          <span />
-        </div>
+      <div v-if="$auth.loggedIn" class="navbar-end">
+        <p>Logged in as: {{ $auth.user }}</p>
+      </div>
+
+      <div v-else class="navbar-end">
+        <NuxtLink to="/login" class="white"> Login </NuxtLink>
       </div>
     </nav>
 
     <section class="main-content columns">
       <aside class="column is-2 section">
-        <p class="menu-label is-hidden-touch">Nav</p>
         <ul class="menu-list">
           <li v-for="(item, key) of items" :key="key">
             <NuxtLink :to="item.to" exact-active-class="is-active">
@@ -40,6 +44,7 @@
 <script>
 export default {
   name: 'DefaultLayout',
+  components: {},
   data() {
     return {
       items: [
@@ -68,3 +73,18 @@ export default {
   },
 }
 </script>
+
+<style scoped>
+.white {
+  font-size: 120%;
+  margin: 7%;
+}
+
+.navbar {
+  display: flex;
+}
+
+.navbar-end {
+  display: flex;
+}
+</style>
