@@ -14,19 +14,17 @@
       <span />
       <span />
 
-      <div v-if="$auth.loggedIn" class="right-aligned">
+      <div v-if="$auth.loggedIn" class="navbar-end">
         <p>Logged in as: {{ $auth.user }}</p>
       </div>
 
-      <div v-else class="right-aligned">
-        <NuxtLink class="headerText" to="/login">Login </NuxtLink><br />
-        <NuxtLink class="headerText" to="/register">Register </NuxtLink>
+      <div v-else class="navbar-end">
+        <NuxtLink to="/login" class="white"> Login </NuxtLink>
       </div>
     </nav>
 
     <section class="main-content columns">
       <aside class="column is-2 section">
-        <p class="menu-label is-hidden-touch">Nav</p>
         <ul class="menu-list">
           <li v-for="(item, key) of items" :key="key">
             <NuxtLink :to="item.to" exact-active-class="is-active">
@@ -46,6 +44,7 @@
 <script>
 export default {
   name: 'DefaultLayout',
+  components: {},
   data() {
     return {
       items: [
@@ -75,15 +74,17 @@ export default {
 }
 </script>
 
-
 <style scoped>
-.headerText {
-  color: #000;
-  font-size: 1em;
-  float: right;
+.white {
+  font-size: 120%;
+  margin: 7%;
 }
 
-.right-aligned {
-  width: 65%;
+.navbar {
+  display: flex;
+}
+
+.navbar-end {
+  display: flex;
 }
 </style>

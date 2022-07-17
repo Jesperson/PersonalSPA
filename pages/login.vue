@@ -1,5 +1,11 @@
 <template>
-  <UserAuthForm></UserAuthForm>
+  <div>
+    <p>
+      This is my planned login page to be able to add posts to my future
+      "blog"-page.
+    </p>
+    <UserAuthForm></UserAuthForm>
+  </div>
 </template>
 
 <script>

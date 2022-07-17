@@ -1,12 +1,12 @@
 <template>
-  <div>
+  <div class="stacked">
     <form>
-      <input v-model="username" label="Name" required>
-      <label>Name</label>
-      <input v-model="email" label="Email" required>
-      <label>Email</label>
-      <input v-model="password" label="Password" required>
-      <label>Password</label>
+      <li>
+      <input v-model="username" label="Name" class="is-info" placeholder="Name" required>
+      </li>
+      <li>
+      <input v-model="password" label="Password" class="is-info" placeholder="Password" required>
+      </li>
     </form>
   </div>
 </template>
@@ -23,3 +23,11 @@ export default {
   },
 }
 </script>
+
+<style scoped>
+.stacked {
+  list-style: none;
+  float: left;
+  margin: 1%;
+}
+</style>
